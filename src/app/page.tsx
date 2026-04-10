@@ -1,21 +1,21 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/sections/About';
-import EducationSection from './components/sections/Education';
-import Experiences from './components/sections/Experiences';
-import Hobbies from './components/sections/Hobbies';
-import Projects from './components/sections/Projects';
-import Contributions from './components/sections/Contributions';
-import ContactSection from './components/sections/Contact';
-import Footer from './components/Footer';
-import { portfolioData } from './data/portfolio';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import About from '@/components/sections/About';
+import EducationSection from '@/components/sections/Education';
+import Experiences from '@/components/sections/Experiences';
+import Hobbies from '@/components/sections/Hobbies';
+import Projects from '@/components/sections/Projects';
+import Contributions from '@/components/sections/Contributions';
+import ContactSection from '@/components/sections/Contact';
+import Footer from '@/components/Footer';
+import { portfolioData } from '@/data/portfolio';
 
-function App() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-dark-900">
       <Header />
       <main>
-        <Hero 
+        <Hero
           name={portfolioData.name}
           title={portfolioData.title}
           tagline={portfolioData.tagline}
@@ -32,5 +32,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
